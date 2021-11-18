@@ -1,10 +1,12 @@
 {
-  "name": "heroku-multi-process",
-  "version": "1.0.1",
+  "name": "heroku",
+  "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startForever": "forever start fv.json",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
