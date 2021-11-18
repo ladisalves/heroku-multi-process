@@ -19,6 +19,10 @@ app.listen(port, () => {
 	console.log(`Success! Your application is running on port ${port}.`);
 });
 
+app.get('/', function (req, res) {
+	res.send('use /a or /b');
+});
+
 app.get('/a', function (req, res) {
 	console.log('endpoint a');
 	fetch('http://localhost:4000', { httpsAgent })
