@@ -5,6 +5,7 @@ ENV PORT $PORT
 
 COPY  . .
 
+RUN echo $PORT
 RUN npm i
 
 CMD [ "npm", "start" ]
